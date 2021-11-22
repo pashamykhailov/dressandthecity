@@ -17,6 +17,20 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             padding-bottom: 50px;
+            min-height: 100vh;
+        }
+        .container-big .social-icons {
+            position: absolute;
+            top: 30px;
+            right: 60px;
+        }
+        .container-small .social-icons {
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .container-small {
             display: none;
@@ -26,11 +40,16 @@
             align-items: center;
             justify-content: center;
             padding-top: 50px;
+            position: relative;
+            margin-bottom: 20px;
         }
         .logo > img {
             height: 100%;
             width: 30%;
             max-width: 300px;
+        }
+        .container-small .logo > img {
+            width: auto;
         }
         .main-section-wrapper {
             display: flex;
@@ -52,13 +71,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0 20px;
+        }
+        .container-small .letter {
+          margin-top: 115px;
+          margin-bottom: 25px;
         }
         .row {
             padding-left: 50px;
             padding-right: 50px;
-        }
-        .social-icons > a {
-            padding-left: 60px;
         }
         .row {
             display: flex;
@@ -100,11 +121,19 @@
                             src="./assets/img/mobile/logo_small.png"
                             alt="dress in the city logo"
                         />
+                        <div class="social-icons">
+                            <a href="https://instagram.com/dressandthecity.ua">
+                                <img
+                                    src="./assets/img/mobile/instagram_small.png"
+                                    alt="instagram link"
+                                />
+                            </a>
+                        </div>
                     </div>
                     <div class="main-section-wrapper">
                         <div class="letter">
                             <img
-                                src="./assets/img/desktop/letter_big.png"
+                                src="./assets/img/desktop/letter_big.jpg"
                                 alt="about us"
                             />
                         </div>
@@ -114,14 +143,6 @@
                                 alt="girls photo"
                             />
                         </div>
-                    </div>
-                    <div class="social-icons">
-                      <a href="https://instagram.com/dressandthecity.ua">
-                            <img
-                                src="./assets/img/mobile/instagram_small.png"
-                                alt="instagram link"
-                            />
-                        </a>
                     </div>
                 </div>
             </div>
@@ -136,18 +157,6 @@
                             alt="dress in the city logo"
                         />
                     </div>
-                    <div class="photo">
-                        <img
-                            src="./assets/img/desktop/girls_photo.png"
-                            alt="girls photo"
-                        />
-                    </div>
-                    <div class="letter">
-                        <img
-                            src="./assets/img/desktop/letter_big.png"
-                            alt="about us"
-                        />
-                    </div>
                     <div class="social-icons">
                         <a href="https://instagram.com/dressandthecity.ua">
                             <img
@@ -155,6 +164,18 @@
                                 alt="instagram link"
                             />
                         </a>
+                    </div>
+                    <div class="letter">
+                        <img
+                            src="./assets/img/desktop/letter_big.jpg"
+                            alt="about us"
+                        />
+                    </div>
+                    <div class="photo">
+                        <img
+                            src="./assets/img/desktop/girls_photo.png"
+                            alt="girls photo"
+                        />
                     </div>
                 </div>
             </div>
